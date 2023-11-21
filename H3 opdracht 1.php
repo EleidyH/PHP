@@ -23,22 +23,34 @@
         
         //H3 opdracht 1.
         date_default_timezone_set("Europe/Amsterdam");
-        $today = date("j F Y");
+        $today = date("l j F Y");
         echo "Het is vandaag: $today";
         
         echo "<br>";
         $jaar = date("y");
-        echo "Vandaag is het de $jaar dag van het jaar";
+        echo "Vandaag is het de $jaar" . "e dag van het jaar";
         
         echo"<br>";
         $dag = date("l");
         $dageninweek = date("w");
-        echo "$dag is de $dageninweek dag van de week";
+        echo "$dag is de $dageninweek" . "de dag van de week";
         
         echo "<br>";
         $maand = date("F");
         $maanddagen = date("t");
         echo "De maand $maand heeft in totaal $maanddagen dagen.";
+
+        echo "<br>";
+        $schrikkeljaar = date("L");
+        echo $schrikkeljaar;
+        $year = date("Y");
+        
+        if ($schrikkeljaar == 0) {
+            echo "Het jaar $year is geen schrikkeljaar";
+        }
+        else {
+            echo "Het jaar $year is well een schrikkeljaar";
+        }
         ?>
     </body>
 </html>
