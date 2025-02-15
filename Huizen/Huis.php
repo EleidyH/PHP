@@ -20,6 +20,47 @@ class Huis {
         $this->diepte = $diepte;
     }
 
+    // Getters en setters voor de eigenschappen
+    public function getAantalVerdiepingen() {
+        return $this->aantalVerdiepingen;
+    }
+
+    public function setAantalVerdiepingen($aantalVerdiepingen) {
+        $this->aantalVerdiepingen = $aantalVerdiepingen;
+    }
+
+    public function getAantalKamers() {
+        return $this->aantalKamers;
+    }
+
+    public function setAantalKamers($aantalKamers) {
+        $this->aantalKamers = $aantalKamers;
+    }
+
+    public function getBreedte() {
+        return $this->breedte;
+    }
+
+    public function setBreedte($breedte) {
+        $this->breedte = $breedte;
+    }
+
+    public function getHoogte() {
+        return $this->hoogte;
+    }
+
+    public function setHoogte($hoogte) {
+        $this->hoogte = $hoogte;
+    }
+
+    public function getDiepte() {
+        return $this->diepte;
+    }
+
+    public function setDiepte($diepte) {
+        $this->diepte = $diepte;
+    }
+
     // Methode om het volume van het huis te berekenen
     public function berekenVolume() {
         return $this->breedte * $this->hoogte * $this->diepte;
